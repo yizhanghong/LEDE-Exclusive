@@ -69,4 +69,6 @@ git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
 # svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome package/adguardhome
 # svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-adguardhome package/luci-app-adguardhome
 merge_package https://github.com/vernesong/OpenClash OpenClash/luci-app-openclash
-
+#升级golang
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
